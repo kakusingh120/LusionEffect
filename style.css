@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    font-family: gilroy;
+}
+
+.loading-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    pointer-events: none;
+}
+
+.counter{
+    position: fixed;
+    left: 50px;
+    bottom: -35px;
+    display: flex;
+    height: 100px;
+    font-size: 100px;
+    line-height: 102px;
+    clip-path: polygon(0 0 , 100% 0 , 100% 100px , 0 100px);
+    font-weight: 400;
+}
+
+/* .counter1,.counter2,.counter3{
+    position: relative;
+    top: -15px;
+} */
+
+.counter1{
+    position: relative;
+    top: -15px;
+}
+
+.numofset1{
+    position: relative;
+    right: -25px;
+}
+
+.numofset2{
+    position: relative;
+    right: -10px;
+}
+
+
+
+.cover-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 300px;
+    transform: translate(-50% , -50%);
+    display: flex;
+    background-color: rgb(80, 80, 80);
+    /* gap: -100px; */
+    /* background-color: #fff; */
+}
+
+
+
+.loader{
+    display: flex;
+    width: 300px;
+     /* overflow: hidden; */
+    /* height: 40px; */
+    background-color: #fff;
+    /* border-right: 5px solid #fff; */
+}
+
+.loader1{
+    position: relative;
+    width: 200px;
+     /* overflow: hidden; */
+    /* height: 40px; */
+    background-color: #fff;
+    /* border-right: 5px solid #fff; */
+}
+
+.loader2{
+    position: relative;
+    width: 100px;
+     /* overflow: hidden; */
+    /* height: 40px; */
+    background-color: #fff;
+    /* border-left: 5px solid #ffffff; */
+}
+
+.bar{
+    height: 40px;
+}
+
+.web-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.heading{
+
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.h1{
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.heading .h1 h1{
+    text-align: center;
+    position: relative;
+    top: 80px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-weight: 500;
+    /* font-size: 110px; */
+}
+
+.header-revaral{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.header-revaral::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 110%;   
+    background-color: #fff;
+    top: 80px; 
+}
+
